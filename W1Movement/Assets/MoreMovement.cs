@@ -26,9 +26,9 @@ public class MoreMovement : MonoBehaviour
 
         }
 
-        Vector2 dirBtwnSquares = otherSquare.transform.position - transform.position;
-        float angle = Mathf.Atan2(dirBtwnSquares.y, dirBtwnSquares.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        //Vector2 dirBtwnSquares = otherSquare.transform.position - transform.position;
+        //float angle = Mathf.Atan2(dirBtwnSquares.y, dirBtwnSquares.x) * Mathf.Rad2Deg;
+        //transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
 
     }
