@@ -42,7 +42,7 @@ using UnityEngine;
 //        Debug.Log(posx);
 
 //        circle.transform.position = new Vector2(posx + transform.position.x, posy + transform.position.y);
-        
+
 
 
 //    }
@@ -69,6 +69,6 @@ using UnityEngine;
 //    private void OnGUI()
 //    {
 //        if (GUI.Button(new Rect(10, 10, 100, 30), "Add sprite"))
-//        {  sr.sprite = mySprite;}
-    }
-}
+////        {  sr.sprite = mySprite;}
+//    }
+//}
