@@ -21,14 +21,14 @@ public class CircleMovement : MonoBehaviour
             Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Debug.Log("clicked!" + worldPoint.x + " " + worldPoint.y);
           
-            Vector3 direction = worldPoint - transform.position;
-            rb.AddForce(new Vector2(direction.x, direction.y), ForceMode2D.Impulse);
+            //Vector3 direction = worldPoint - transform.position;
+            //rb.AddForce(new Vector2(direction.x, direction.y), ForceMode2D.Impulse);
 
         }
        
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Destroy(collision.gameObject);
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    Destroy(collision.gameObject);
+
 }

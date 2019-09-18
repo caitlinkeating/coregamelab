@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+  - enabled: 0
+    path: Assets/ALL SCENES/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Flying Balls.unity
+    path: Assets/ALL SCENES/Scenes/MAINSCENE.unity
     guid: 73c5547ab680d41bcbc2d792f70fd321
+  - enabled: 0
+    path: Assets/ALL SCENES/gravityflipper.unity
+    guid: 20d0fbbcea1484afa95c1cd8f304d0c1
   m_configObjects: {}
