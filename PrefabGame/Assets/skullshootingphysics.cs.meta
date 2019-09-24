@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ebfbc6aae3e43446e91cf2ff6458348e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - skull: {fileID: 2080913828191067319, guid: 9fc853fe2ce1b45449675af889fc9e89, type: 3}
+  - priest: {fileID: 3671804474473199554, guid: 80f9a09dafb66442c9509519b8cbce1e,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
