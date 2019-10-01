@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 37bce521ff44a4198897f2ff53d51fa5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - brain_prefab: {fileID: 374872449243500776, guid: df91817f28e57460fae1b818dabaa3c8,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

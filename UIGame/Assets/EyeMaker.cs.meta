@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8796a3020509048b2adca502562a508e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - eye_prefab: {fileID: 424707541518999230, guid: 0ac76c83738964cc79bf9b417e97b63b,
+      type: 3}
+  - eyeSlider: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

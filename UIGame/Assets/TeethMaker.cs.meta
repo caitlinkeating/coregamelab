@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: a845c5485bf784ef7b6b597e81041a44
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - teeth_prefab: {instanceID: 0}
+  - teethSlider: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
