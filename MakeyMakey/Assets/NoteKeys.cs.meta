@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: c15ad11acdbd74561941d6cab9f47977
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - someSound: {instanceID: 0}
+  - anotherSound: {instanceID: 0}
+  - athirdSound: {instanceID: 0}
+  - lastSound: {instanceID: 0}
+  - Note1A: {fileID: 21300000, guid: 447fe7f30a207422486f7f64e0c6ba05, type: 3}
+  - Note1B: {fileID: 21300000, guid: 31b2981e6a9da4d26b9e8fc143597c33, type: 3}
+  - Note2A: {fileID: 21300000, guid: 447fe7f30a207422486f7f64e0c6ba05, type: 3}
+  - Note2B: {fileID: 21300000, guid: 31b2981e6a9da4d26b9e8fc143597c33, type: 3}
+  - Note3A: {fileID: 21300000, guid: 447fe7f30a207422486f7f64e0c6ba05, type: 3}
+  - Note3B: {fileID: 21300000, guid: 31b2981e6a9da4d26b9e8fc143597c33, type: 3}
+  - Note4A: {fileID: 21300000, guid: 447fe7f30a207422486f7f64e0c6ba05, type: 3}
+  - Note4B: {fileID: 21300000, guid: 31b2981e6a9da4d26b9e8fc143597c33, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

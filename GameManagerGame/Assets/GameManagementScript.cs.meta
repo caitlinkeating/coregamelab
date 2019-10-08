@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bc9201a137cd34c328a3978a43fbe1cf
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - PetButton: {instanceID: 0}
+  - cat_prefab: {fileID: 6142841046838955815, guid: c69cae01bc2924e5e9f5184f734318de,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

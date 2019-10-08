@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 75160401ac200458ea17acef166cae65
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - countText: {instanceID: 0}
+  - cookie_prefab: {fileID: 7180389222910557792, guid: 51fd7a14c352a4016b13501fef7c0bb9,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

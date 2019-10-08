@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WASD : MonoBehaviour
+public class FaceWASD : MonoBehaviour
 {
     public float panSpeed = 10f;
+
+    Rigidbody2D rb; 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>(); 
     }
 
     // Update is called once per frame
@@ -25,15 +27,17 @@ public class WASD : MonoBehaviour
         {
             pos.y -= panSpeed * Time.deltaTime;
         }
-        if (Input.GetKey("left"))
+        if (Input.GetKey("right"))
         {
             pos.x += panSpeed * Time.deltaTime;
         }
-        if (Input.GetKey("right"))
+        if (Input.GetKey("left"))
         {
-            pos.x -= panSpeed * Time.deltaTime; 
+            pos.x -= panSpeed * Time.deltaTime;
+           
         }
 
         transform.position = pos;
     }
+
 }
