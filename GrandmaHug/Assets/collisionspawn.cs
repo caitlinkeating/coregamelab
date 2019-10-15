@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class collisionspawn : MonoBehaviour
   
@@ -19,14 +20,11 @@ public class collisionspawn : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "grandma2")
+        if(collision.gameObject.tag == "grandma2")
         {
-
-            //Instantiate(PrefabH, new Vector2(transform.position.x, transform.position.y + 7f), transform.rotation);
-            //return;
-            Instantiate(PrefabH, new Vector2(gameObject.transform.position.x, gameObject.transform.position.y), Quaternion.identity);
+            SceneManager.LoadScene("FightScene");
         }
     }
 }

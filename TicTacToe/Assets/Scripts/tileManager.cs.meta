@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2db2594434c74493980604c0cff613e2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - sprite: {instanceID: 0}
+  - Xsprite: {fileID: -4523829797204999652, guid: 9abb1fe0a12874e328bebd3cd779e58b,
+      type: 3}
+  - Osprite: {fileID: 1954654475881741122, guid: 9abb1fe0a12874e328bebd3cd779e58b,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

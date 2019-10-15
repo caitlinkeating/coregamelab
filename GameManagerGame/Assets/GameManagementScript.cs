@@ -5,25 +5,45 @@ using UnityEngine.UI;
 
 public class GameManagementScript : MonoBehaviour
 {
-	public Button PetButton;
+    public Text countPets; 
 
-	public GameObject cat_prefab;
+    public Button PetButton;
+    public Slider catSlider;
+
+    public GameObject cat_prefab;
 
 	int numPets;
 
+    float petTime;
+    float petTimer;
 
+    bool isAsleep; 
 
 	// Start is called before the first frame update
 	void Start()
 	{
 		numPets = 0;
+        petTime = 5;
+        petTimer = 0;
+
+        isAsleep = true;
+        
+
+        countPets.text = numPets.ToString(); 
 		
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		
+		if (numPets == 10)
+        {
+
+        }
+        if (!isAsleep)
+        {
+            //change sprite to other cat 
+        }
 	}
 
 
@@ -33,6 +53,12 @@ public class GameManagementScript : MonoBehaviour
 
 
 	}
+
+    public void catChange()
+    {
+    }
+
+
 
 
 }
