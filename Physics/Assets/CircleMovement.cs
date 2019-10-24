@@ -27,8 +27,8 @@ public class CircleMovement : MonoBehaviour
         }
        
     }
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    Destroy(collision.gameObject);
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("collision!"); 
+    }
 }

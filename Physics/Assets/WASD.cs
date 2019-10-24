@@ -25,15 +25,19 @@ public class WASD : MonoBehaviour
         {
             pos.y -= panSpeed * Time.deltaTime;
         }
-        if (Input.GetKey("left"))
+        if (Input.GetKey("right"))
         {
             pos.x += panSpeed * Time.deltaTime;
         }
-        if (Input.GetKey("right"))
+        if (Input.GetKey("left"))
         {
             pos.x -= panSpeed * Time.deltaTime; 
         }
 
         transform.position = pos;
     }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    Debug.Log("collision!"); 
+    
 }

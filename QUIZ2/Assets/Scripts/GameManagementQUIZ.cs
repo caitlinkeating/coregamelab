@@ -8,7 +8,7 @@ public class GameManagementQUIZ : MonoBehaviour
 {
 	public static int coinCount;
 
-	public Slider coinslider;
+	public static Slider coinslider;
 	public Text coinText;
     
     // Start is called before the first frame update
@@ -36,4 +36,5 @@ public class GameManagementQUIZ : MonoBehaviour
     {
         SceneManager.LoadScene("Scene2"); 
     }
+
 }

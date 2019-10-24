@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NotRottenSpawner : MonoBehaviour
+public class SpawnScript : MonoBehaviour
 {
     public GameObject notrottenbanana;
+
     float randX;
     Vector2 whereToSpawn;
     public float spawnRate = 3f;
