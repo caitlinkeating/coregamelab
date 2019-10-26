@@ -5,25 +5,27 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class HealthUpdate : MonoBehaviour
+public class lostKid : MonoBehaviour
 {
     public static Slider healthSlider;
 
     public float totalHealth;
-    public float delay = 10;
-    public string NextLevel = "DeathScene"; 
 
     public Image fillSlider;
-    public Gradient gradient; 
 
+    public Gradient gradient;
+
+    public float t;
+
+    // Start is called before the first frame update
     void Start()
     {
         healthSlider = GameObject.Find("healthSlider").GetComponent<Slider>();
+     
 
         totalHealth = 5f;
         healthSlider.value = totalHealth;
 
-        
     }
 
     void Update()
@@ -43,35 +45,33 @@ public class HealthUpdate : MonoBehaviour
         if (healthSlider.value <= 1f) //flash? 
         {
             fillSlider.color = new Color(1f, 0f, 0f, 1f);
-            //gameObject.GetComponent<Animator>().Play("HealthFlash");    
-            StartCoroutine(LoadLevelAfterDelay(delay));
+            //gameObject.GetComponent<Animator>().Play("HealthFlash");
+
+            SceneManager.LoadScene("DeathScene");
+
         }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(healthSlider.value);
-        if (collision.gameObject.tag == "bird")
 
+        if (collision.gameObject.tag == "screenlimit")
         {
-            UpdateHealth();
+            Debug.Log("collided"); 
+            LostKid();
+            Destroy(collision.gameObject);
+
         }
-    
     }
 
-    public void UpdateHealth()
+    public void LostKid()
     {
-        healthSlider.value -= 1f;
-    
-    }
+        healthSlider.value -= 3f;
+        
 
-    IEnumerator LoadLevelAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene("DeathScene");
     }
 
 
 
-    
 }

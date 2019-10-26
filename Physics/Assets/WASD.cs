@@ -17,19 +17,19 @@ public class WASD : MonoBehaviour
     {
         Vector3 pos = transform.position;
 
-        if (Input.GetKey("up"))
+        if (Input.GetKey("w"))
         {
             pos.y += panSpeed * Time.deltaTime;
         }
-        if (Input.GetKey("down"))
+        if (Input.GetKey("s"))
         {
             pos.y -= panSpeed * Time.deltaTime;
         }
-        if (Input.GetKey("right"))
+        if (Input.GetKey("d"))
         {
             pos.x += panSpeed * Time.deltaTime;
         }
-        if (Input.GetKey("left"))
+        if (Input.GetKey("a"))
         {
             pos.x -= panSpeed * Time.deltaTime; 
         }
