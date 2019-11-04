@@ -9,9 +9,12 @@ public class ShootingBullets : MonoBehaviour
     public GameObject bullet;
     public GameObject bullet1;
 
+    public AudioSource blip; 
+
     // Start is called before the first frame update
     void Start()
     {
+        blip = GetComponent<AudioSource>(); 
 
     }
 
@@ -20,6 +23,8 @@ public class ShootingBullets : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+
+            /////////////  /////////////  /////////////  /////////////  /////////////
             Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             Vector2 direction = (Vector2)((worldMousePos - transform.position));
@@ -30,7 +35,11 @@ public class ShootingBullets : MonoBehaviour
                 bullet1, transform.position + (Vector3)(direction * 0.5f), Quaternion.identity);
 
             bullet.GetComponent<Rigidbody2D>().velocity = direction * bulletVelocity;
+            /////////////  /////////////  /////////////  /////////////  /////////////
+
+            blip.Play(); 
         }
+
 
 
     }

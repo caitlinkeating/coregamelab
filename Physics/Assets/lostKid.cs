@@ -30,26 +30,26 @@ public class lostKid : MonoBehaviour
 
     void Update()
     {
-        if (healthSlider.value <= 4f) //orange
-        {
-            fillSlider.color = new Color(1f, 0.92f, 0.016f, 1f);
-        }
-        if (healthSlider.value == 3f) //yellow 
-        {
-            fillSlider.color = new Color(0.9f, 0.4f, 0, 1f);
-        }
-        if (healthSlider.value == 2f) // red 
-        {
-            fillSlider.color = new Color(1f, 0f, 0f, 1f);
-        }
-        if (healthSlider.value <= 1f) //flash? 
-        {
-            fillSlider.color = new Color(1f, 0f, 0f, 1f);
-            //gameObject.GetComponent<Animator>().Play("HealthFlash");
+        //if (healthSlider.value <= 4f) //orange
+        //{
+        //    fillSlider.color = new Color(1f, 0.92f, 0.016f, 1f);
+        //}
+        //if (healthSlider.value == 3f) //yellow 
+        //{
+        //    fillSlider.color = new Color(0.9f, 0.4f, 0, 1f);
+        //}
+        //if (healthSlider.value == 2f) // red 
+        //{
+        //    fillSlider.color = new Color(1f, 0f, 0f, 1f);
+        //}
+        //if (healthSlider.value <= 1f) //flash? 
+        //{
+        //    fillSlider.color = new Color(1f, 0f, 0f, 1f);
+        //    //gameObject.GetComponent<Animator>().Play("HealthFlash");
 
-            SceneManager.LoadScene("DeathScene");
+        //    //SceneManager.LoadScene("DeathScene");
 
-        }
+        //}
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -60,7 +60,7 @@ public class lostKid : MonoBehaviour
         {
             Debug.Log("collided"); 
             LostKid();
-            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
 
         }
     }

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - grandma2
+  - grandma1
+  - mace
+  - sword
   layers:
   - Default
   - TransparentFX

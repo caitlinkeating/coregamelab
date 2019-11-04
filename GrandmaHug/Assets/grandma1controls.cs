@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement; 
 
 public class grandma1controls : MonoBehaviour
 {
     public float panSpeed = 15f;
-    Rigidbody2D rb; 
+    Rigidbody2D rb;
+
+    float delay = 2f;
+    public string NextLevel = "FightScene"; 
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +42,21 @@ public class grandma1controls : MonoBehaviour
         
 
         transform.position = pos;
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "grandma2")
+        {
+            StartCoroutine(LoadLevelAfterDelay(delay));
+        }
+    }
+
+    IEnumerator LoadLevelAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene("FightScene"); 
+        
     }
 }
 
